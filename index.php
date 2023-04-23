@@ -18,7 +18,7 @@
         <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>CT - Física</title>
+        <title>CT - Notas</title>
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -27,6 +27,7 @@
         
         <!-- Favicon  -->
         <link rel="icon" href="images/favicon.png">
+
     </head>
     <body>
         
@@ -67,12 +68,15 @@
             <div class="container">
                 <h2>Ingresa correctamente tu DNI</h2>
                 <p class="p-heading">Recuerda digitar correctamente tus datos</p>
-                <div class="form-group">
-                    <input type="text" class="form-control-input-button">
-                    <br>
-                    <br>
-                    <button type="submit" class="form-control-submit-button">Enviar</button>
-                </div>
+                <form action="">
+                    <div class="form-group" id="dni">
+                        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type = "number" maxlength = "8" class="form-control-input-button" required>
+                        <br>
+                        <br>
+                    </div>
+                    <button type="submit" class="form-control-submit-button" onclick="">Enviar</button>
+                </form>
             </div> <!-- end of container -->
         </div> <!-- end of contact -->
         <!-- end of contact -->
@@ -116,5 +120,6 @@
         <!-- Scripts -->
         <script src="js/smooth-scroll.polyfills.min.js"></script> <!-- Smooth Scroll -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="js/validarDNI.js"></script>
     </body>
 </html>
