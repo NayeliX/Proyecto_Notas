@@ -250,9 +250,25 @@ a:hover {
 	border: 2px solid #d7d8e1;
 }
 
+.form-control-input-button{
+	display: inline-block;
+	width: 70%;
+	height: 3.75rem;
+	border: 2px solid #25563f;
+	border-radius: 32px;
+	background-color: #ffffff;
+	color: #050505;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 0;
+	font-family: "Poppins";
+	transition: all 0.2s;
+	text-align: center;
+}
+
 .form-control-submit-button {
 	display: inline-block;
-	width: 100%;
+	width: 70%;
 	height: 3.75rem;
 	border: 2px solid #25563f;
 	border-radius: 32px;
@@ -270,6 +286,7 @@ a:hover {
 	border: 2px solid #25563f;
 	background-color: transparent;
 	color: #25563f;
+	font-weight: bold;
 }
 
 
