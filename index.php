@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- SEO Meta Tags -->
         <meta name="description" content="Your description">
@@ -63,20 +63,22 @@
         <!-- end of header -->
 
 
-        <!-- Contact -->
+        <!-- Formunulario -->
         <div id="contact" class="contact bg-gray">
             <div class="container">
                 <h2>Ingresa correctamente tu DNI</h2>
                 <p class="p-heading">Recuerda digitar correctamente tus datos</p>
-                <form action="">
+
+                <form method="post" action="">
                     <div class="form-group" id="dni">
                         <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                        type = "number" maxlength = "8" class="form-control-input-button" required>
+                        type = "number" maxlength = "8" class="form-control-input-button" name="dni" required>
                         <br>
                         <br>
                     </div>
-                    <button type="submit" class="form-control-submit-button" onclick="">Enviar</button>
+                    <button type="submit" class="form-control-submit-button" name="btnIngresar">Enviar</button>
                 </form>
+                
             </div> <!-- end of container -->
         </div> <!-- end of contact -->
         <!-- end of contact -->
@@ -93,7 +95,7 @@
                     <!-- Text Logo -->
                     <!-- <a class="logo-text" href="index.html">Name</a> -->
 
-                    <p>Copyright © 2023</p>
+                    <p>Miguel Barrantes Flores © 2023</p>
                 </div>
                 <div>
                     <ul class="li-space-lg">
@@ -120,6 +122,5 @@
         <!-- Scripts -->
         <script src="js/smooth-scroll.polyfills.min.js"></script> <!-- Smooth Scroll -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
-        <script src="js/validarDNI.js"></script>
     </body>
 </html>
